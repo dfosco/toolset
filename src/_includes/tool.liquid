@@ -1,0 +1,22 @@
+---
+layout: base
+---
+<div style="display: flex; flex-direction: column; gap: 32px; max-width: 300px">
+<h2>{{ name }}</h2>
+<strong>
+    <a href="{{ url }}">{{ url }}</a>
+</strong>
+
+{{ content }}
+
+<img height="40px" width="40px" src="/assets/{{ image }}" alt="">
+
+<strong>{{ platform }}</strong>
+
+<strong>Labels</strong>
+{% for label in labels %}
+<code style="background-color: grey; margin-right: 6px;">
+    <em>{{ label }}</em>
+</code>
+{% endfor %}  
+</div>

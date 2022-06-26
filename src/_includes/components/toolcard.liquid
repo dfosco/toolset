@@ -1,0 +1,7 @@
+<article style="background-color: lightgrey">
+    <h2><a href="{{ url }}">{{ name }}</a></h2>
+    <img src="/assets/{{ image }}" alt="">
+    {% for label in labels %}
+        <em style="background-color: goldenrod">{{ label }}</em>
+    {% endfor %}
+</article>

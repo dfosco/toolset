@@ -1,0 +1,32 @@
+---
+layout: base
+---
+
+{{ content }}
+
+{% for post in collections.posts %}
+<article style="background-color: lightgrey">
+    <h2><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h2>
+    <em>{{ post.date | date: "%Y-%m-%d" }}</em>
+</article>
+{% endfor %}  
+
+{% comment %}
+{% for tool in collections.tools %}
+{% 
+  render "components/toolcard", 
+  url: tool.url
+  image: tool.data.image
+  name: tool.data.name
+  labels: tool.data.labels 
+%}
+{% endfor %}      
+
+
+<article style="background-color: lightgrey">
+    <h2><a href="{{ tool.url }}">{{ tool.data.name }}</a></h2>
+    {% for label in tool.data.labels %}
+        <em style="background-color: goldenrod">{{ label }}</em>
+    {% endfor %}
+</article>
+{% endcomment %}

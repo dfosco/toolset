@@ -1,0 +1,9 @@
+public/
+node_modules/
+.env
+.log
+.cache
+yarn.lock
+package-lock.json
+.vscode
+.DS_Store
