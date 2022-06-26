@@ -10,19 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/bkmgit/11ty.git"
+    "url": "git+https://github.com/dfosco/toolset"
   },
   "keywords": [
-    "Example",
-    "Javascript",
+    "UX",
+    "Tools",
     "11ty"
   ],
-  "author": "Benson Muite",
-  "license": "Unlicense",
-  "bugs": {
-    "url": "https://gitlab.com/bkmgit/11ty/issues"
-  },
-  "homepage": "https://gitlab.com/bkmgit/11ty#readme",
+  "author": "Daniel Fosco",
+  "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
   }
